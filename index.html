@@ -1,0 +1,1354 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tutorial DSUPE</title>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema1.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo javascript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js" type="text/javascript"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('imagenes/6.jpg','imagenes/8.jpg','imagenes/9.jpg','imagenes/12.png','imagenes/15.jpg','imagenes/20.jpg','imagenes/22.png','imagenes/23.jpg','imagenes/29.png','imagenes/32.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header"  data-add-back-theme="a">
+    <h1>Tutorial de DSUPE</h1>
+  </div>
+  <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/10.jpg" alt="10" title="10" id="wows1_0"/></li>
+		<li><img src="data1/images/1.jpg" alt="1" title="1" id="wows1_1"/></li>
+		<li><img src="data1/images/2.jpg" alt="2" title="2" id="wows1_2"/></li>
+		<li><img src="data1/images/3.jpg" alt="3" title="3" id="wows1_3"/></li>
+		<li><img src="data1/images/4.png" alt="4" title="4" id="wows1_4"/></li>
+		<li><img src="data1/images/5.jpg" alt="5" title="5" id="wows1_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/8.jpg" alt="responsive slider" title="8" id="wows1_6"/></a></li>
+		<li><img src="data1/images/11.jpg" alt="11" title="11" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="10"><span><img src="data1/tooltips/10.jpg" alt="10"/>1</span></a>
+		<a href="#" title="1"><span><img src="data1/tooltips/1.jpg" alt="1"/>2</span></a>
+		<a href="#" title="2"><span><img src="data1/tooltips/2.jpg" alt="2"/>3</span></a>
+		<a href="#" title="3"><span><img src="data1/tooltips/3.jpg" alt="3"/>4</span></a>
+		<a href="#" title="4"><span><img src="data1/tooltips/4.png" alt="4"/>5</span></a>
+		<a href="#" title="5"><span><img src="data1/tooltips/5.jpg" alt="5"/>6</span></a>
+		<a href="#" title="8"><span><img src="data1/tooltips/8.jpg" alt="8"/>7</span></a>
+		<a href="#" title="11"><span><img src="data1/tooltips/11.jpg" alt="11"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.8</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1> 1.-Desarrollo el proceso para dar solucion a un problema por computadora.</h1>
+      <div> <br>
+      </div>
+      <div> 
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>a) Identificar el problema. </h2>
+        </a> </li>
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> b) Analizar el problema. </h2>
+        </a> </li>
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina13" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> c) Elaborar el algoritmo que da solucion al problema.</h2>
+        </a> </li>
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina14" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> d) Hacer el analisis de los datos.</h2>
+        </a> </li>
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina15" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> e) Elaborar el diagrama de flujo.</h2>
+        </a> </li>
+        <li class="ui-first-child ui-last-child"> <a href="#Pagina16" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> f) Crear el pseudocodigo de la solucion</h2>
+        </a> </li>
+        <li class="ui-first-child ui-last-child"> <a href="#Pagina17" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> g) Crear el codigo de la solucion</h2>
+        </a> </li>
+        </ul>
+       </div>
+    </div>
+  </div>
+  <div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>2.-Identificar  y aplica el principio de programacion estructurada.</h2>
+        </a> </li>
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>3.-Reconocimiento del entorno de desarrollo grafico del DFD. </h2>
+        </a> </li>
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>4.-Reconocimiento del entorno de desarrollo grafico del pseint.</h2>
+        </a> </li>
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>5.-Reconocimiento del entorno de desarrollo grafico C#. </h2>
+        </a> </li>
+        <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1> 6.-Desarrolla procesos de estructura lineal.</h1>
+      <div> <br>
+      </div>
+      <div> 
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>a) Identifica y aplica el concepto de variable. </h2>
+        </a> </li>
+     <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1> b) Aplica las variables en las operaciones que definen su algoritmo.</h1>
+      <div> <br>
+      </div>
+      <div> 
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina62" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> i. Reconoce y aplica las variables de acuerdoa su uso.</h2>
+        <p> ( de trabajo, contadoras y acumuladoras)</p>
+        </a> </li>
+     <li class="ui-first-child ui-last-child"> <a href="#Pagina63" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> ii. Reconoce y aplica las variables de acuerdo con su contenido .</h2>
+        <p> ( numericas, alfanumericas y logicas)</p>
+        </a> </li>
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina64" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>iii. Reconoce y aplica las variables de acuerdo a su ambito.</h2>
+        <p> ( locales y globales)</p>
+        </a> </li>
+        </ul>
+       </div>
+    </div>
+  </div>
+        
+      
+        </ul>
+       </div>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1> 7.- Desarrolla el proceso de estructura condicional.</h1>
+      <div> <br>
+      </div>
+      <div> 
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+       <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1> a) Elementos de una expresion condicional.</h1>
+      <div> <br>
+      </div>
+      <div> 
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina71" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> i. Operadores comparativos.</h2>
+        </a> </li>
+     <li class="ui-first-child ui-last-child"> <a href="#Pagina712" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> ii. Operadores logicos .</h2>
+                </a> </li>
+    
+        </ul>
+       </div>
+    </div>
+  </div>
+        <li class="ui-first-child ui-last-child"> <a href="#Pagina72" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> b) Manipular la estructura de decision if.</h2>
+                </a> </li>
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina73" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> c) Manipular la estructura de decision if-else.</h2>
+                </a> </li>
+                <li class="ui-first-child ui-last-child"> <a href="#Pagina74" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>d) Manipular la estructura de decision else-if.</h2>
+                </a> </li>
+                <li class="ui-first-child ui-last-child"> <a href="#Pagina75" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> e) Manipular la estructura de decision switch.</h2>
+                </a> </li>
+                <li class="ui-first-child ui-last-child"> <a href="#Pagina76" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> f) Manipular la estructura de decision en forma de anidamiento.</h2>
+                </a> </li>
+        </ul>
+       </div>
+    </div>
+  </div>
+      <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1> 8.-Desarrolla procesos de estructura repetitiva.</h1>
+      <div> <br>
+      </div>
+      <div> 
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>a) Manipular la estructura de repeticion while. </h2>
+        </a> </li>
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina82" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> b) Manipular la estructura de repeticion do-while. </h2>
+        </a> </li>
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina83" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> c) Manipular la estructura de repeticion for. </h2>
+        </a> </li>
+      <li class="ui-first-child ui-last-child"> <a href="#Pagina84" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> d) Manipular la estructura de repeticion en forma de anidamiento. </h2>
+        </a> </li>
+        </ul>
+       </div>
+    </div>
+  </div>
+        <li class="ui-first-child ui-last-child"> <a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>9.-Uso de variables tipo arreglo.</h2>
+        </a> </li>
+        <li class="ui-first-child ui-last-child"> <a href="#Pagina10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>10.-Convierte programas elaborados en archivos ejecutables.</h2>
+        </a> </li>
+        <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/33.jpg" alt="33" title="33" id="wows2_0"/></li>
+		<li><img src="data2/images/22.png" alt="22" title="22" id="wows2_1"/></li>
+		<li><img src="data2/images/27.png" alt="27" title="27" id="wows2_2"/></li>
+		<li><img src="data2/images/24.jpg" alt="24" title="24" id="wows2_3"/></li>
+		<li><img src="data2/images/26.png" alt="26" title="26" id="wows2_4"/></li>
+		<li><img src="data2/images/28.jpg" alt="28" title="28" id="wows2_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data2/images/32.jpg" alt="jquery carousel" title="32" id="wows2_6"/></a></li>
+		<li><img src="data2/images/34.jpg" alt="34" title="34" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="33"><span><img src="data2/tooltips/33.jpg" alt="33"/>1</span></a>
+		<a href="#" title="22"><span><img src="data2/tooltips/22.png" alt="22"/>2</span></a>
+		<a href="#" title="27"><span><img src="data2/tooltips/27.png" alt="27"/>3</span></a>
+		<a href="#" title="24"><span><img src="data2/tooltips/24.jpg" alt="24"/>4</span></a>
+		<a href="#" title="26"><span><img src="data2/tooltips/26.png" alt="26"/>5</span></a>
+		<a href="#" title="28"><span><img src="data2/tooltips/28.jpg" alt="28"/>6</span></a>
+		<a href="#" title="32"><span><img src="data2/tooltips/32.jpg" alt="32"/>7</span></a>
+		<a href="#" title="34"><span><img src="data2/tooltips/34.jpg" alt="34"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.8</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+        <div data-role="main" class="ui-content" align="center">
+      <div style="width:80%;">
+        <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+          <li class="ui-first-child ui-last-child"> <a href="#pagina11" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <p>DATOS DEL DEARROLLADOR</p>
+            </a> </li>
+        </ul>
+      </div>
+    </div>
+      
+                </ul>
+              </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <h4>Luis Eduardo Peralta Flores </h4>
+  <p>Aplicacion diez, LEPF</p>
+  <img src="res/android/mdpi.png" width="56" height="46"> 
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2> Identificar el problema. </h2>
+      <p>Cuando nos proponemos resolver problemas en programación siempre pasamos directamente al computador y empezamos a escribir código sin antes haber analizado en lo más mínimo el problema, o bueno lo vamos analizando y directamente vamos escribiendo el código y pues en algunos casos esta práctica funciona, claro está, cuando los problemas son sencillos o cuando eres un programador experimentado, no así con problemas más complejos y más aún cuando estas empezando a programar.    
+         </p>
+         <br>
+      <img src="imagenes/1.jpg" width="60%" height="60%" /><br>
+        <div data-role="main" class="ui-content" align="center">
+          <div style="width:20%;">
+            <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+              <li class="ui-first-child ui-last-child"> <a href="https://es.wikipedia.org/wiki/Batalla_de_Atlixco_(1862)" target="_self" data-role="button">
+                <p>Más informacion</p>
+                </a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+      <h4> Aplicacion diez, LEPF</h4>
+    </div>
+  </div>
+<div data-role="page" id="Pagina12" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2> Analizar el problema. </h2>
+      <p>En esta etapa se debe definir y tener claro lo que el programa tiene que hacer junto con las tareas que debe realizar para llevar a cabo la solución, qué datos necesito para realizar la tareas, que formato deben tener los datos de entrada, de donde provienen los datos de entrada, como se obtienen esos datos, cómo interactúan los datos entre sí para obtener el resultado, muy importante tener claro cuál será el resultado que se desea obtener, tampoco dejar de lado las restricciones que puede haber al momento de procesar los datos.
+      <br>
+      Básicamente en este punto o fase se debe recoger todos los requerimientos y especificaciones del problema.
+
+Este punto debe ser uno de los más importantes y críticos de la resolución de problemas ya que un mal análisis lleva a un mal diseño y posterior a un mal resultado.    
+         </p>
+      <br>
+      <img src="imagenes/2.jpg" width="60%" height="60%" > </div>
+    </div>
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+      <h4> Aplicacion diez, LEPF</h4>
+    </div>
+  </div>
+<div data-role="page" id="Pagina13" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Elaborar el algoritmo que da solucion al problema.</h2>
+      <p> Una vez que tenemos claro el problema, después de haber definido todas la entradas y salidas que va tener el programa, también las tareas a realizar, es hora de diseñar el algoritmo y que irá de acuerdo a todas las especificaciones anteriores y posteriormente será implementado en un lenguaje de programación para ser ejecutado por la computadora.
+<br>
+El algoritmo se lo puede hacer de cualquier forma: Pseudocódigo o Diagrama de Flujo, la idea principal es que sea entendible, y no solo por el que lo diseñó si no por cualquier persona.
+
+En conclusión en la etapa anterior se define qué es lo que hará el programa, en esta fase, se define como lo hará.</p>
+     <br>
+     <img src="imagenes/34.jpg" width="60%" height="60%"/>      </div>
+    <div data-role="main" class="ui-content" align="center">
+      <div style="width:20%;">
+        <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+          <li class="ui-first-child ui-last-child"> <a href="https://es.wikipedia.org/wiki/Batalla_de_Puebla" target="_self" data-role="button">
+            <p>Más informacion</p>
+            </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina14" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Hacer el analisis de los datos</h2>
+      <p> De igual forma se debe analizar todos los escenarios que pueden darse ya que un cambio de escenario puede variar el resultado final del programa, siempre vale la pena cuestionarse y hacer la pregunta: ¿y si pasa esto o aquello? qué comportamiento tomaría el programa.
+      no importa el tiempo que demores en esta etapa, la idea es que quede bien claro todo, la primera vez puede que te demores un montón pero a medida que lo practicas vas cogiendo experiencia y si lo tomas como hábito en las próximas veces lo harás aún más rápido.</p>
+   <br>
+     <img src="imagenes/4.png" width="60%" height="60%"/>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://www.ecodeup.com/como-resolver-problemas-programacion/" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina15" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> </h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Elaborar el diagrama de flujo.</h2>
+      <p>Los diagramas de flujo pueden tener muchos símbolos especializados, pero el diagrama en sí es sorprendentemente fácil de hacer. Un diagrama de flujo de éxito transmite información de una manera organizada, eficiente y de fácil consumo.
+      <br>
+      1.Escoja un medio en el que trazar su diagrama de flujo. Algunas personas usan lápiz y papel, o un rotulador y una pizarra, mientras que otras usan software de diagramas de flujo especialmente diseñado para la tarea.
+      <br>
+      2.Es el momento de dibujar su diagrama de flujo. Etiquete su forma con un nombre apropiado, como “Comienzo” o “Empezar aquí” 
+       <br>
+      3.Puede copiar y pegar fácilmente los elementos de acción que ya ha enumerado en el símbolo correcto.Los rectángulos representan un proceso que se va a llevar a cabo, mientras que los diamantes representan una decisión que se debe hacer. Trace flechas entre cada elemento para delinear mejor el camino.
+      <br>
+      4.Su gráfico está casi finalizado. Pero antes de ponerlo en uso, asegúrese de que el diagrama de flujo es completo y exhaustivo. Muévase de paso a paso y descubra si ha representado correctamente la secuencia de tareas y decisiones.
+      <br>
+      5.Continúe añadiendo cada paso a su diagrama de flujo hasta que su diagrama de flujo represente completamente el proceso. Después añada la forma de círculo alargado para demostrar la finalización.
+</p>
+     <br>
+     <img src="imagenes/3.jpg" width="60%" height="60%"/>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://www.lucidchart.com/pages/es/c%C3%B3mo-hacer-un-diagrama-de-flujo" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina16" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Crear el pseudocodigo de la solucion</h2>
+      <p>El pseudocódigo es un bosquejo de código verbal que se escribe paso por paso y que puedes transcribir gradualmente en un lenguaje de programación. El pseudocódigo sirve como una guía informal, una herramienta para pensar a través de problemas de programas y un dispositivo de comunicación que puede ayudarte a explicarles tus ideas a otras personas. 
+      No existe una sintaxis fija a la cual debes apegarte por completo, pero es común que por cuestiones de cortesía profesional se usen estructuras de pseudocódigo estándares que puedan entender fácilmente otros programadores. Si vas a codificar un proyecto por ti mismo, entonces lo más importante es que el pseudocódigo te ayude a estructurar tus pensamientos y representar tus planes.</p>
+      <br>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('1','','imagenes/6.jpg',1)"><img src="imagenes/5.jpg" alt="" width="1280" height="720" id="1"></a>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://es.wikihow.com/escribir-pseudoc%C3%B3digo" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina17" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Crear el codigo de la solucion</h2>
+      <p>El principal consejo para cualquiera que desee comenzar es hacer exactamente eso – solo empezar. Toma como seguro este consejo: tan pronto como te ensucies las manos y escribas algo de código que funcione, ya habrás ganado una enorme cantidad de conocimiento. Entonces, no tengas miedo de equivocarte – algunas de las cosas más importantes que aprende todo programador surgen de la corrección de su propio código,  cometiendo errores y  buscando la manera correcta de arreglarlos.
+
+Ya que has avanzado hasta acá, ahora es momento de que veas algunos ejemplos comunes que ilustran claramente por qué la elección entre lenguajes no es tan importante en un principio.
+
+ </p>
+     <br>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('2','','imagenes/8.jpg',1)"><img src="imagenes/7.jpg" alt="" width="299" height="169" id="2"></a>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://oja.la/blog/como-empezar-a-escribir-codigo/" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Identificar  y aplica el principio de programacion estructurada.</h2>
+      <p>
+      El teorema del programa estructurado proporciona la base teórica de la programación estructurada. Señala que la combinación de las tres estructuras básicas, secuencia, selección e iteración, son suficientes para expresar cualquier función computable. Esta observación no se originó con el movimiento de la programación estructurada. Estas estructuras son suficientes para describir el ciclo de instrucción de una unidad central de procesamiento, así como el funcionamiento de una máquina de Turing. Por lo tanto, un procesador siempre está ejecutando un «programa estructurado» en este sentido, incluso si las instrucciones que lee de la memoria no son parte de un programa estructurado.  El teorema del programa estructurado no responde a cómo escribir y analizar un programa estructurado de manera útil.
+
+ </p>
+     <br>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','imagenes/9.jpg',1)"><img src="imagenes/10.jpg" alt="" width="259" height="194" id="Image3"></a>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://es.wikipedia.org/wiki/Programaci%C3%B3n_estructurada#Fundamentaci%C3%B3n_te%C3%B3rica" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+		<h2>Reconocimiento del entorno de desarrollo grafico del DFD</h2>
+		<p>¿Que es Dfd?: Dfd es un software diseñado para construir y analizar algoritmos . Usted puede crear diagramas de flujo de datos para la representación de algoritmos de programación estructurada a partir de las herramientas de edición que para éste propósito suministra el programa. Después de haber ingresado el algoritmo representado por el diagrama, podrá ejecutarlo, analizarlo y depurarlo en un entorno interactivo diseñado para éste fin. La interfaz gráfica de Dfd, facilita en gran medida el trabajo con diagramas ya que simula la representación estándar de diagramas de flujo en hojas de papel. 
+<br>
+Algoritmo: Un algoritmo es un procedimiento para la resolución de problemas de cualquier tipo por medio de determinada secuencia de pasos simples y no ambiguos. El concepto fue utilizado originalmente para el cálculo matemático pero ahora es ampliamente usado en programación de computadoras. 
+<br>
+Diagrama de Flujo de Datos: Un diagrama de flujo de datos es una descripción gráfica de un procedimiento para la resolución de un problema. Son frecuentemente usados para describir algoritmos y programas de computador. Los diagramas de flujo de datos están conformados por figuras conectadas con flechas. Para ejecutar un proceso descrito por un diagrama de flujo de datos se comienza por el INICIO y se siguen las flechas de figura a figura, ejecutándose las acciones indicadas por cada figura; el tipo de figura indica el tipo de paso que representa. 
+<br>
+Arreglos (Arrays): Dfd soporta arreglos n-dimensionales de cualquier tipo de dato. El nombre de un arreglo debe comenzar por una letra seguida de letras, números o el caracter ( _ ). 
+<br>
+Interfaz de Usuario: Dfd posee una ventana principal que proporciona el ambiente de trabajo en donde se pueden construir y analizar algoritmos. Los componentes básicos de la ventana principal son: La barra de menú, barras de herramientas, barras de desplazamiento y el área de trabajo. 
+<br>
+Subprograma Actual: En Dfd, solo un subprograma (incluyendo el principal) puede ser visualizado a la vez, considerándose éste el Subprograma Actual.  </p>
+     <br>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('4','','imagenes/12.png',1)"><img src="imagenes/13.jpg" alt="" width="267" height="189" id="4"></a>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://sites.google.com/site/semestre1belen/analisis/dfd" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+		<h2>Reconocimiento del entorno de desarrollo grafico del Pseint</h2>
+    <p>
+    1. ¿Qué es PSeInt? Es un Entorno de Desarrollo Integrado (IDE, por sus siglas en inglés) para PseudoCódigo, un lenguaje de programación imperativa simple y en español. Es decir, PseInt es un editor e intérprete de programas escritos en PseudoCódigo. Su interfaz gráfica permite: (Pseudo Intérprete)<br>
+    2. ¿Por qué usar PSeInt y no otro intérprete o compilador de pseudocódigo? Porque es software libre, NO hay necesidad de comprarlo, violar los derechos de autor, ni andar creando o consiguiendo cracs. Está constantemente atendido por su creador, a diferencia de los otros compiladores e intérpretes de pseudocódigo que están descontinuados. Posee un foro para reportar errores y obtener ayuda, está también está constantemente atendido por su creador, lo que ayuda a mejorar el programa. Posee una extensa ayuda, que valga la redundancia ayuda a aprender a usarlo, y a aprender el lenguaje. Está disponible su código fuente, y con instrucciones para ejecutarlo, de modo que si sabemos C++ podremos personalizarlo y corregirlo. Posee exportación a C++ para que podamos ver el mismo código en C++, lo que ayuda a aprender C++. Se trata de un intérprete y no un compilador, el archivo no tienen por qué ser guardado en disco para ser ejecutado, haciendo más cómodo su uso.<br>
+    3. ¿Cuál es la Estructura de PSeInt? Barra de menú Panel de ejecución Barra de comandos Para definir acciones Área del editor de “acciones” del pseudocódigo Información de Ejecución De Sintaxis (Exportar)<br>
+    4. ¿Qué debo considerar para programar? 1. Un programa escrito en PseudoCódigo comienza con la palabra clave Proceso seguida del nombre del programa, luego le sigue una secuencia de instrucciones y finaliza con la palabra FinProceso. 1. Los identificadores, o nombres de variables, deben constar sólo de letras y números, comenzando siempre con una letra. Recuerda el tipo de dato: • Entero (sin decímales). • Real (números con cifras decímales). • Carácter (guarda un carácter). • Cadena (guarda cadenas de caracteres). • Lógico (guarda una expresión lógica (v o f).<br>
+    5. ¿Qué debo considerar para programar? 3. Las constantes se declaran: Cuando son del tipo numérico (colocando su valor directamente) , de tipo carácter colocando su valor entre comillas ( “ “ ). 4. Para representar las Acciones básicas de un Algoritmo se debe colocar: • Escritura : Escribir “ mensaje”; • Lectura: Leer x; • Asignación: Total (P*num); En las constantes numéricas el punto ( . ) es el separador decimal. Constante carácter Constante Numérica<br>
+    6. ¿Qué debo considerar para programar? 5. Para Probar o Ejecutar el programa se debe terminar todo el Algoritmo y oprimir la tecla F9 o la opción Ejecutar del panel de ejecución de no existir ningún error de sintaxis correrá el programa perfectamente. 6. Para realizar su Diagrama de Flujo se debe seleccionar la opción del Panel de Ejecución (este se puede guardar como una imagen), sí se quiere representar es un Nassi Schneiderman se debe configurar primero y luego hacer clic en el ícono .
+</p>
+     <br>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('5','','imagenes/15.jpg',1)"><img src="imagenes/14.png" alt="" width="480" height="270" id="5"></a>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://es.slideshare.net/andreinatrejo90/pseint-62672222" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+		<h2>Reconocimiento del entorno de desarrollo grafico C#</h2>
+     <p> El entorno de desarrollo integrado (IDE) de Visual C# es un conjunto de herramientas de desarrollo expuestas a través de una interfaz de usuario común. Algunas de las herramientas se comparten con otros lenguajes de Visual Studio, y otras, como el compilador de C#, son exclusivas de Visual C#. En este tema se proporcionan vínculos a las herramientas de Visual C# más importantes.
+      <br>
+       Crear una aplicación sencilla: 	
+Proporciona información general de muchas de las características y herramientas incluidas en Visual Studio para el desarrollo de aplicaciones.
+<br>
+Crear soluciones y proyectos:	Describe cómo crear un proyecto que contiene todos los archivos de origen, archivos de recursos, tales como iconos, referencias a archivos externos, y datos de configuración, tales como las opciones del compilador.
+<br>
+Introduction to the Project Designer:	Proporciona una descripción general del Diseñador de proyectos, que constituye una ubicación centralizada para administrar las propiedades, configuraciones y recursos del proyecto.
+<br>
+Escribir código:	Describe las herramientas de Visual Studio que le ayudan a modificar y manipular texto, código y marcado, para insertar y configurar controles y otros objetos y espacios de nombres, y para agregar referencias a componentes y recursos externos.
+<br>
+IntelliSense para Visual C#:	Proporciona vínculos a los temas que describen las características específicas de Visual C#, como generación de código automática e IntelliSense para los miembros usados recientemente.
+<br>
+Fragmentos de código de Visual C#:	Proporciona información general sobre el uso de fragmentos de código en Visual C# para agregar automáticamente construcciones de código comunes a la aplicación.
+<br>
+Escribir código:	Proporciona vínculos a procedimientos de uso de la ventana Buscar y reemplazar, Marcadores y la Lista de tareas y la Lista de errores para buscar líneas de código.
+<br>
+Ver la estructura del código:	Explica cómo explorar jerarquías de clases, miembros de clase y recursos.
+ <br>
+ Agregar un archivo de configuración de aplicaciones a un proyecto de C#:	Describe cómo agregar un archivo de configuración (app.config) a un proyecto de C#.
+<br>
+Metadatos como origen:	Describe cómo el IDE permite ver los metadatos como código fuente.
+<br>
+Refactorización (C#):	Muestra operaciones de refactorización que ayudan a modificar el código sin cambiar el comportamiento de la aplicación.
+<br>
+Compilar aplicaciones en Visual Studio:	Explica cómo configurar las compilaciones de depuración, de versión y especiales de la solución de Visual Studio.
+<br>
+Depurar en Visual Studio: Describe cómo ejecutar el depurador de Visual Studio para resolver errores lógicos y semánticos.
+<br>
+Administrar los recursos de la aplicación (.NET):	Muestra cómo agregar o editar los recursos para su proyecto, como cadenas, imágenes, iconos, audio y archivo.</p>
+     <br>
+     <img src="imagenes/16.png" width="60%" height="60%"/>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://msdn.microsoft.com/es-es/library/ms173063.aspx" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Identifica y aplica el concepto de variable.</h2> 
+      <p>
+      Variable.- Cuando el tamaño de la misma puede variar a lo largo de la ejecución. Típicamente colecciones de datos.
+      <br>
+      En programación, una variable está formada por un espacio en el sistema de almacenaje (memoria principal de un ordenador) y un nombre simbólico (un identificador) que está asociado a dicho espacio. Ese espacio contiene una cantidad de información conocida o desconocida, es decir un valor. El nombre de la variable es la forma usual de referirse al valor almacenado: esta separación entre nombre y contenido permite que el nombre sea usado independientemente de la información exacta que representa. El identificador, en el código fuente de la computadora puede estar ligado a un valor durante el tiempo de ejecución y el valor de la variable puede por lo tanto cambiar durante el curso de la ejecución del programa. El valor de una variable en computación no es necesariamente parte de una ecuación o fórmula como en matemáticas. En computación una variable puede ser utilizada en un proceso repetitivo: puede asignársele un valor en un sitio, ser luego utilizada en otro, más adelante reasignársele un nuevo valor para más tarde utilizarla de la misma manera.Procedimientos de este tipo son conocidos con el nombre de iteración. En programación de computadoras, a las variables, frecuentemente se le asignan nombres largos para hacerlos relativamente descriptivas para su uso, mientras que las variables en matemáticas a menudo tienen nombres escuetos, formados por uno o dos caracteres para hacer breve en su transcripción y manipulación.
+<br>
+El espacio en el sistema de almacenaje puede ser referido por diferentes identificadores . Esta situación es conocida entre los angloparlantes como "aliasing" y podría traducirse como "sobrenombramiento" para los hispanoparlantes. Asignarle un valor a una variable utilizando uno de los identificadores cambiará el valor al que se puede acceder a través de los otros identificadores.
+		</p>
+     <br> 
+     <img src="imagenes/17.png" width="60%" height="60%"/>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://es.wikipedia.org/wiki/Variable_(programaci%C3%B3n)" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina62" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Reconoce y aplica las variables de acuerdo su uso.</h2> 
+      <p>
+    Variables de Trabajo: Variables que reciben el resultado de una operación matemática completa y que se usan normalmente dentro de un programa.
+ <br>
+    Contadores: Se utilizan para llevar el control del numero de ocasiones en que se realiza una operación o se cumple una condición. Con los incrementos generalmente de uno en uno.
+    Acumuladores: Forma que toma una variable y que sirve para llevar la suma acumulativa de una serie de valores que se van leyendo o calculando progresivamente.
+<br>
+Introducción Variables y conceptos En el tema anterior aprendimos la importancia que tiene la definición de los conceptos a estudiar, ya que a través de ellos es como vamos a probar nuestra hipótesis, estos conceptos y sus definiciones nos condicionan. En un trabajo es importante que los conceptos sean operacionalizados de tal forma que puedan ser medidos.Variables y conceptosVariables Diseñando una variable Tipos de Variables Escalas
+<br>
+Introducción Variables. Definición • Magnitud que puede tomar varios valores distintos. • Una imagen, percepción o concepto que permite ser medido –capaz de tomar distintos valores-. • Unidad racional de análisis que puede asumir cualquiera de los valores de un conjunto designado de ellos. Hay que decir que hay una gran parte de la comunidad que defiende que hay variables que no se pueden medir correctamente como los sentimientos preferencias, valores y sensaciones, aunque a veces sí se pueden utilizar mediante indicadores indirectos.Variables y conceptosVariables Diseñando una variable Tipos de Variables Escalas. 
+		</p><br>
+      <img src="imagenes/18.png" width="60%" height="60%"/>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://es.slideshare.net/rrepiso/identificacin-de-variables-tema-5" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina63" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Reconoce y aplica las variables de acuerdo con su contenido .</h2> 
+      <p>
+    Variables Numéricas: Son aquellas en las cuales se almacenan valores numéricos, positivos o negativos, es decir almacenan números del 0 al 9, signos (+ y -) y el punto decimal.
+    <br>
+    Variables Lógicas: Son aquellas que solo pueden tener dos valores (cierto o falso) estos representan el resultado de una comparación entre otros datos.
+    <br>
+    Variables Alfanuméricas: Esta formada por caracteres alfanuméricos (letras, números y caracteres especiales).
+    <br>
+ Se puede  utilizar  variables  para  almacenar  valores  temporalmente  durante  la  ejecución  de  una  aplicación.  Las  variables  tienen  un  nombre y un tipo  de  dato (que  determina  la  clase  de  datos  que la variable puede almacenar).
+Puede  considerar  una  variable  como  un  marcador  de  posición  en  memoria  de  un  valor desconocido. La  expresión  devuelve  un  total  distinto  cada  vez,  dependiendo  de  los  valores  que  indique  el  usuario.  Las  variables  le  permiten  realizar  un  cálculo  sin  tener  que  saber  antes  cuáles  son los valores especificados
+	
+		</p>
+      <div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="http://sal2arelymartinez.blogspot.com/2014/08/variables-numericas-alfanumericas-y.html" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina64" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Reconoce y aplica las variables de acuerdo a su ambito.</h2> 
+      <p>
+        Las reglas de ámbito de un lenguaje son las reglas que controlan si un fragmento de código conoce o tiene acceso a otro fragmento de código o de datos.
+        <br>
+     Una variable local es aquella cuyo ámbito se restringe a la función que la ha declarado se dice entonces que la variable es local a esa función. Esto implica que esa variable sólo va a poder ser manipulada en dicha sección, y no se podrá hacer referencia fuera de dicha sección. Cualquier variable que se defina dentro de las llaves del cuerpo de una función se interpreta como una variable local a esa función.
+     <br>
+      Una variable global es aquella que se define fuera del cuerpo de cualquier función, normalmente al principio del programa, después de la definición de los archivos de biblioteca (#include), de la definición de constantes simbólicas y antes de cualquier función. El ámbito de una variable global son todas las funciones que componen el programa, cualquier función puede acceder a dichas variables para leer y escribir en ellas. Es decir, se puede hacer referencia a su dirección de memoria en cualquier parde del programa.
+		</p>
+      <div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="http://decsai.ugr.es/~jfv/ed1/c/cdrom/cap6/cap62.htm" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina71" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Operadores comparativos.</h2> 
+      <p>
+    Los operadores de comparación o también conocido como operadores relacionales, sirven para tomar decisiones mediante comparaciones, y por su mayoría van complementadas con las estructuras condicionales y sentencia de control de flujo.
+<br>
+Cuando se evalúa una condición en los operadores de comparación, el resultado que se obtiene puede ser 1 (equivalente a verdadero) o 0 (equivalente a falso). Este resultado provocará que se ejecute el código del bloque if o el del bloque else, según corresponda.
+<br>
+A continuación un listado de los posibles operadores de comparación en C y su significado.
+Operadores de Comparación Operador 	Significado
+
+
+		</p>
+      <table width="423" border="1">
+        <tbody>
+          <tr>
+            <td width="67"><strong>Operador</strong></td>
+            <td width="163"><strong>significado</strong></td>
+          </tr>
+          <tr>
+            <td>&lt;</td>
+            <td>menor que</td>
+          </tr>
+          <tr>
+            <td>&gt;</td>
+            <td>mayor que</td>
+          </tr>
+          <tr>
+            <td>&lt;=</td>
+            <td>menor o igual que</td>
+          </tr>
+          <tr>
+            <td>&gt;=</td>
+            <td>mayor o igual que</td>
+          </tr>
+          <tr>
+            <td>==</td>
+            <td>igual que</td>
+          </tr>
+          <tr>
+            <td>!=</td>
+            <td>distinto de </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>El resultado de cualquier evaluación de este tipo es un valor “cierto” (true) o “Falso” (false). La mayoría de los lenguajes tiene algún tipo predefinido para representar estos valores (boolean, bool, etc.); sin embargo en C, se toma como falso el valor 0, y como verdadero cualquier otro valor distinto de 0, aunque normalmente se usa 1.
+</p>
+      <div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="http://luiguio1804.wixsite.com/batalladepuebla/personajes" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina712" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Operadores logicos.</h2> 
+      <p>
+    Los operadores lógicos son usados para unir y evaluar varias comparaciones, combinando los posibles valores de estas, ellos producen un resultado booleano, y sus operandos son también valores lógicos o asimilables a ellos (los valores numéricos son asimilados a cierto o falso según su valor sea cero o distinto de cero respectivamente).
+</p>
+      <table width="661" border="1">
+        <tbody>
+          <tr>
+            <td width="95"><strong>Operador 	</strong></td>
+            <td width="67"><strong>Simbolo 	</strong></td>
+            <td width="66"><strong>Ejemplo 	</strong></td>
+            <td width="251"><strong>Resultado</strong></td>
+          </tr>
+          <tr>
+            <td>Y (AND) </td>
+            <td>&&</td>
+            <td>a && b</td>
+            <td>True si ambos a y b son verdadero</td>
+          </tr>
+          <tr>
+            <td>O (OR)</td>
+            <td>|| 	</td>
+            <td>a || b</td>
+            <td>True si a o b son verdadero</td>
+          </tr>
+          <tr>
+            <td>O EXCLUSIVO (XOR)</td>
+            <td>XOR</td>
+            <td>a ^ b</td>
+            <td>True si a es verdadero o b es verdadero, pero no ambos </td>
+          </tr>
+          <tr>
+            <td>NEGACION (NOT)</td>
+            <td>! 	 </td>
+            <td>!a</td>
+            <td>True si a no es verdadero</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>  Operador Y lógico también denominado por su nombre en inglés (generalmente en mayúsculas) AND lógico. Devuelve un valor lógico true (1) si ambos operando son ciertos. En caso contrario el resultado es false (0). </p>
+      <div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="http://luiguio1804.wixsite.com/batalladepuebla/personajes" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina72" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Manipular la estructura de decision if.</h2> 
+      <p>
+     es un estamento que se utiliza para probar si una determinada condición se ha alcanzado, como por ejemplo averiguar si un valor analógico está por encima de un cierto número, y ejecutar una serie de declaraciones (operaciones) que se escriben dentro de llaves, si es verdad. Si es falso (la condición no se cumple) el programa salta y no ejecuta las operaciones que están dentro de las llaves.
+     <br>
+     Syntax
+<br>
+if (condition)<br>
+{<br>
+  //statement(s)<br>
+}
+</p>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image44','','imagenes/20.jpg',1)"><img src="imagenes/19.png" alt="" width="201" height="251" id="Image44"></a>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://adolfredobelizario.wordpress.com/2012/06/18/tutorial-4-lenguaje-c/" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina73" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Manipular la estructura de decision if-else.</h2> 
+      <p>
+   La instrucción if selecciona una instrucción para ejecución en base al valor de una expresión Boolean. En el ejemplo siguiente un indicador Boolean flagCheck se establece en true y, a continuación, se protege en la instrucción if. El resultado es: The flag is set to true.
+<hr style="border: solid 1px #686868">
+bool flagCheck = true;<br>
+if (flagCheck == true)<br>
+{<br>
+    Console.WriteLine("The flag is set to true.");<br>
+}<br>
+else<br> 
+{<br>
+    Console.WriteLine("The flag is set to false.");<br>
+}<br>
+<hr style="border: solid 1px #686868">
+Si la expresión en el paréntesis se evalúa como true, a continuación se ejecuta la instrucción Console.WriteLine("The boolean flag is set to ture."); . Después de ejecutar la instrucción if, el control se transfiere a la siguiente instrucción. Else no se ejecuta en este ejemplo.
+Si se desea ejecutar más de una instrucción, es posible ejecutar varias instrucciones en forma condicional al incluirlas en bloques mediante {}, al igual que en el ejemplo anterior.
+Las instrucciones que se van a ejecutar como resultado de comprobar la condición pueden ser de cualquier tipo, incluida otra instrucción if anidada dentro de la instrucción if original. En las instrucciones if anidadas, la cláusula else pertenece a la última instrucción if que no tiene una cláusula else correspondiente.
+		</p> 
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('6','','imagenes/20.jpg',1)"><img src="imagenes/21.jpg" alt="" width="276" height="183" id="6"></a>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;"> 
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="http://luiguio1804.wixsite.com/batalladepuebla/personajes" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina74" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Manipular la estructura de decision else-if.</h2> 
+      <p>
+   Estructuras de Decisión<br>
+Else–if<br>
+if(condición)<br>
+proposición<br>
+else if(condición)<br>
+proposición<br>
+else if(condición)<br>
+proposición<br>
+...<br>
+else<br>
+proposición
+       </p><br>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image46','','imagenes/23.jpg',1)"><img src="imagenes/22.png" alt="" width="200" height="252" id="Image46"></a>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="ftp://www.ece.buap.mx/pub/profesor/JCC/Programacion/Unidad%203/LenguajeC.pdf
+" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina75" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Manipular la estructura de decision switch</h2> 
+      <p>
+   La instrucción switch es una instrucción de control que controla múltiples selecciones y enumeraciones pasando el control a una de las instrucciones case de su cuerpo, como se muestra en el ejemplo siguiente:
+<hr style="border: solid 1px #7D7D7D">
+int caseSwitch = 1;<br>
+switch (caseSwitch)<br>
+{<br>
+    case 1:<br> 
+        Console.WriteLine("Case 1");<br>
+        break;<br>
+    case 2:<br>
+        Console.WriteLine("Case 2");<br>
+        break;<br>
+    default:<br>
+        Console.WriteLine("Default case");<br>
+        break;<br>
+}<br>
+<hr style="border: solid 1px #7D7D7D">
+El control se transfiere a la instrucción case que coincide con el valor del modificador. La instrucción switch puede incluir cualquier número de instancias case, sin embargo dos instrucciones case nunca pueden tener el mismo valor. La ejecución del cuerpo de la instrucción empieza en la instrucción seleccionada y continúa hasta que la instrucción break transfiere el control fuera del cuerpo case. Es necesario introducir una instrucción de salto como break después de cada bloque case, incluido el último bloque, se trate de una instrucción case o de una instrucción default. Con una excepción, (a diferencia de la instrucción switch de C++), C# no admite el paso implícito de una etiqueta case a otra. Esta excepción se produce si una instrucción case no tiene ningún código.
+<br>
+Si ninguna expresión case coincide con el valor de la instrucción switch, entonces el control se transfiere a las instrucciones que siguen la etiqueta default opcional. Si no existe ninguna etiqueta default, el control se transfiere fuera de la instrucción switch.
+</p><br>
+     <img src="imagenes/24.jpg" width="60%" height="60%"/>
+     <img src="imagenes/25.jpg" width="60%" height="60%"/>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://msdn.microsoft.com/es-es/library/06tc147t(v=vs.80).aspx" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina76" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Manipular la estructura de decision en forma de anidamiento.</h2> 
+      <p>
+  las estructuras de control pueden anidarse en tantos niveles como se desee. A fin de que las estructuras anidadas sean más fáciles de leer, es práctica habitual aplicar sangría al cuerpo de cada una. El editor del entorno de desarrollo integrado (IDE) lo hace automáticamente.
+  <hr style="border: solid 1px #7D7D7D">
+Public Sub sumRows(ByVal a(,) As Double, ByRef r() As Double)<br>
+    Dim i, j As Integer<br>
+    For i = 0 To UBound(a, 1)<br>
+        r(i) = 0<br>
+        For j = 0 To UBound(a, 2) <br>
+            If a(i, j) > 0 Then <br>
+                r(i) = r(i) + a(i, j) <br>
+            End If<br>
+        Next j<br>
+    Next i<br>
+End Sub
+<hr style="border: solid 1px #7D7D7D">
+
+Del mismo modo, en las instrucciones If anidadas, las instrucciones End If se aplican automáticamente a la instrucción If anterior más próxima. Los bucles Do anidados funcionan de forma similar; la instrucción Loop más interna está emparejada con la instrucción Do más interna.
+NotaNota
+<br>
+Anidar diferentes tipos de estructuras de control
+<br>
+Puede anidar un tipo de estructura de control dentro de otro tipo. El ejemplo siguiente utiliza un bloque With dentro de un bucle For Each y bloques If anidados dentro del bloque With.
+<hr style="border: solid 1px #7D7D7D">
+For Each ctl As System.Windows.Forms.Control In Me.Controls<br>
+    With ctl<br>
+        .BackColor = System.Drawing.Color.Yellow<br>
+        .ForeColor = System.Drawing.Color.Black<br>
+        If .CanFocus Then<br>
+            .Text = "Colors changed"<br>
+         If Not .Focus() Then<br>
+                ' Insert code to process failed focus.<br>
+            End If<br>
+        End If<br>
+    End With<br>
+Next ctl
+<hr style="border: solid 1px #7D7D7D">
+		</p>
+      <div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://msdn.microsoft.com/es-ar/library/8y82wx12(v=vs.120).aspx" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Manipular la estructura de repeticion while.</h2> 
+      <p>
+    Una de las estructuras de repetición empleada en la programacion de algoritmos. While permite al programador especificar las veces que se repita una acción(una o más sentencias de programacion) mientras una condición se mantenga verdadera.<br>
+     – Repite una acción mientras (while) alguna condición permanezca con valortrue<br>
+ – La “acción” puede ser una sentencia simple o compuesta<br>
+ – Si la condición inicialmente es false, entonces la “acción” nunca se ejecutará<br>
+Funcionamiento del while: En primer lugar se verifica la condición, si la misma resultaverdadera se ejecutan las operaciones que indicamos entre las llaves que le siguen al while.En caso que la condición sea Falsa continúa con la instrucción siguiente al bloque de llaves.El bloque se repite MIENTRAS la condición sea Verdadera.Importante: Si la condición siempre retorna verdadero estamos en presencia de un ciclorepetitivo infinito. Dicha situación es un error de programación, nunca finalizará elprograma.
+       </p><br>
+      <img src="imagenes/26.png" width="60%" height="60%"/>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://www.scribd.com/doc/42704214/Estructura-de-repeticion-while" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina82" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Manipular la estructura de repeticion do-while.</h2> 
+      <p>
+
+Nuestra segunda estructura iterativa, es muy similar a la de while, con la particularidad de que la condición se comprobará al final de ejecución del código y no al principio, como ocurría tanto con los bucles For y While. Teniendo esta premisa en cuenta, sabremos siempre, que el código a ejecutar, se ejecutará al menos una vez, aunque la condición sea falsa.
+<br>
+Posteriormente, la condición se aplicará igual que en los bucles de tipo While. Pongamos un ejemplo fácil.
+<hr style="border: solid 1px #7D7D7D">
+do<br>
+
+{<br>
+
+//Codigo a ejecutar<br>
+
+}while(i == 10)
+<hr style="border: solid 1px #7D7D7D">
+En el código de ejemplo, tenemos un bucle, que ejecutará el cógido una vez, comprobará si la variable i tiene un valor 10, en caso de que lo tenga continuará ejecutándose el código y en caso contrario, continuará la ejecución de la aplicación.
+<br>
+Puede sernos útil, cuando queramos que se realiza la ejecución una vez o cuando queremos que la condición de nuestra estructura de iteración se verifique al final del bloque de código.
+Para tener un bucle infinito aquí, debe ocurrir algo similar a lo que ocurría dentro de los bucles de tipo while.
+       </p><br>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image50','','imagenes/29.png',1)"><img src="imagenes/27.png" alt="" width="214" height="235" id="Image50"></a>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="http://luiguio1804.wixsite.com/batalladepuebla/personajes" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div> 
+<div data-role="page" id="Pagina83" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Manipular la estructura de repeticion for.</h2> 
+      <p>
+
+Mediante esta estructura tendremos la posibilidad de generar un bucle que se repita una cantidad indicada de veces. En la cabecera indicaremos la variable de control, la condición de repetición y el incremento o decremento de la misma. Un ejemplo de cabecera podría ser este:
+<hr style="border: solid 1px #7D7D7D">
+For(int i = 0 ; i <!< 10 ; i++)<br>
+{<br>
+//codigo a ejecutar.<br>
+}
+<hr style="border: solid 1px #7D7D7D">
+En la cabecera hemos indicado que nuestra variable de control, un entero, hará que el código dentro de la misma se ejecute diez veces (i < 10) >incrementandose cada vez que la ejecutemos.
+El incremento se hará cuando se termine de ejecutar todo el código dentro de la estructura de repetición.  También podemos, hacer que esa variable se decremente quedando la cabecera de la siguiente manera:>
+<hr style="border: solid 1px #7D7D7D">
+For(int i = 10 ; i == 0 ; i–)<br>
+{<br>
+//Código a ejecutar<br>
+}
+<hr style="border: solid 1px #7D7D7D">
+En esta ocasión, se repetirá también diez veces, pero el valor del entero después de salir de la estructura de control será 0.
+Normalmente dentro de este bucle de repetición, también se usa la variable de control. Por ejemplo para recorrer una array o una lista. Pudiendo indicar que el valor de condición sea el valor total de la condición.
+Al menos que dentro del código de la estructura de repetición incrementemos la variable i, nos encontraremos también con un bucle infinito.
+       </p><br>
+      <img src="imagenes/28.jpg" width="60%" height="60%"/>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://devthisblog.wordpress.com/2010/08/26/curso-c-estructuras-de-repeticion/" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div> 
+<div data-role="page" id="Pagina84" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Manipular la estructura de repeticion en forma de anidamiento.</h2> 
+      <p>
+Antes de comenzar, quisiera aclarar que los ciclos anidados NO son en sí una estructura de control, son de hecho un conjunto de estructuras de control anidadas, con anidadas me refiero a que una está dentro de la otra. De este modo un ciclo anidado (de hecho debería ser ciclos anidados, en plural :P) no es más que uno o más ciclos dentro de otro y de hecho no tenemos límite alguno para la cantidad de ciclos anidados.
+<br>
+Uno de los mayores problemas en cuanto a eficiencia que hay en la programación es tener ciclos anidados, son simplemente terribles para el rendimiento, sin embargo hay ocasiones en las que son indispensables. Como mencioné, no existe límite para la cantidad de ciclos anidados, sin embargo entre más ciclos tengamos, uno dentro de otro, más lenta será nuestra ejecución.
+       </p>
+      <div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://www.programarya.com/Cursos/C++/Ciclos/Ciclos-anidados" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div> 
+<div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Uso de variables tipo arreglo.</h2> 
+      <p>
+Los arreglos en C# (también conocidos como Arrays) al igual que en C/C++, son indexados iniciando en cero (0). La forma de trabajo es muy similar a la mayoría de lenguajes pero hay lagunas diferencias que notarán.
+<br>
+Como declarar un arreglo en C#
+<br>
+Cuando vayamos a declarar un arreglo en debemos colocar los corchetes después de tipo de dato. En C/C++ se estila poner los corchetes después del identificador, eso causa un error de compilación en C#.
+<hr style="border: solid 1px #7D7D7D">
+    //Declaración erronea<br>
+    int valores[];<br>
+    //Declaración valida<br>
+    int[] valores;<br>
+ <hr style="border: solid 1px #7D7D7D">
+En C# podemos indicar el tamaño del arreglo luego de la declaración. Esto nos permite decidir que tamaño va a tener el arreglo según lo que necesitemos.
+<hr style="border: solid 1px #7D7D7D">
+       int[] valores; //valores sin inicializar<br>
+    valores = new int[100];  //100 elementos<br>
+    valores = new int[20];  //ahora contiene 20 elementos
+<hr style="border: solid 1px #7D7D7D">
+        </p>
+        <br><img src="imagenes/30.jpg" width="60%" height="60%"/> 
+      <div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="http://www.latindevelopers.com/articulo/arreglos-en-csharp/
+" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div> 
+<div data-role="page" id="Pagina10" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>Convierte programas elaborados en archivos ejecutables.</h2> 
+      <p>
+dentro de la carpeta de los archivos generados por el VS2005 hay una carpeta BIN , dentro de ella esta el archivo EXE; por ejemplo en micaso tengo una ruta como esta:
+
+d:\Datos de Usuarios\VictorG\My Documents\Visual Studio Projects\ImprimirForm\ImprimirForm\bin
+
+La ruta depende de donde hayas creado tu proyecto.
+        </p><br>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image53','','imagenes/32.jpg',1)"><img src="imagenes/31.png" alt="" width="307" height="164" id="Image53"></a>
+<div data-role="main" class="ui-content" align="center">
+        <div style="width:20%;">
+          <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+            <li class="ui-first-child ui-last-child"> <a href="https://social.msdn.microsoft.com/Forums/es-ES/d51ca6d2-830a-409c-993d-70a6ac40fb13/crear-un-ejecutable-de-mi-proyecto?forum=vcses" target="_self" data-role="button">
+              <p>Más informacion</p>
+              </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div> 
+<div data-role="page" id="pagina11" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1></h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+		<h2>Datos del desarrollador</h2>
+     <h3> Nombre alumno: Luis Eduardo Peralta Flores<br>
+      Grupo: E<br>
+      Semestre: 4° <br>
+      Submodulo:Desarrolla Aplicaciones Moviles<br>
+      Nombre del docente:Jose Antonio Gomez<br>
+		</h3><br>
+	<img src="imagenes/33.jpg" width="50%" height="50%">   </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div> <img src="imagenes/bicycle-icon.png" width="46" height="46"> </div>
+    <h4> Aplicacion diez, LEPF</h4>
+  </div>
+</div>
+</body>
+</html>
